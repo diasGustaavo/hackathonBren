@@ -35,7 +35,7 @@ To start a conversation with the sales agent, make a POST request to `/chat/` wi
 
 ```json
 {
-  "user_input": "hi! can you help me find any products by Phillips?",
+  "user_input": "hi! can you help me find any products by Dell?",
   "session_id": "unique-session-id-123"
 }
 ```
