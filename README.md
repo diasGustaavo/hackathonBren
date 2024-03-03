@@ -9,7 +9,6 @@ This project implements a conversational sales agent utilizing the LangChain fra
 - Intelligent conversation handling using LangChain and OpenAI's GPT models.
 - Product information retrieval based on user queries.
 - Recommendations for products by brand, name, or category.
-- In-memory storage for conversation histories.
 - FastAPI server for easy interaction via HTTP requests.
 
 ## Getting Started
