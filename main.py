@@ -88,10 +88,7 @@ def get_products_by_category(category):
     """Get products by an category."""
     docs = products_retriever_by_category.get_relevant_documents(category)
     products_ids = ", ".join([str(d.metadata['ID']) for d in docs])
-    return db.run(f"SELECT NomeProduto FROM Produtos WHERE Categoria in ({products_ids});", include_columns=True)
-
-
-
+    return db.run(f"SELECT NomeProduto FROM Produtos WHERE ID in ({products_ids});", include_columns=True)
 
 
 product_system_message = """Your job is to help a sale find any products they are looking for. 
